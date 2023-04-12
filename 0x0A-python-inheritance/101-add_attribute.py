@@ -5,13 +5,13 @@ This module defines the function that adds a new attribute to an object if it’
 """
 
 
-def add_attribute(obj, att, value):
+def add_attribute(obj, attr, value):
     """
     it adds a new attribute to an object if it's possible.
 
     Args:
         obj: The object to add the attribute to.
-        att: The name of the attribute to add.
+        attr: The name of the attribute to add.
         value: The value to assign to the attribute.
 
     Raises:
@@ -19,4 +19,4 @@ def add_attribute(obj, att, value):
     """
     if not isinstance(obj, object):
         raise TypeError("can't add new attribute")
-    setattr(obj, att, value)
+    setattr(obj, attr, value)
